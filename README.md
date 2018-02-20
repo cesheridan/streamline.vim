@@ -90,6 +90,7 @@ ___
 
 ## RELATED PLUGINS
 *  _**tabwins.vim** 1 Command for custom window structures that persist._  This plugin produces the kinds of multi-window structures for which _streamline.vim_ is optimal.
+  https://raw.githubusercontent.com/cesheridan/tabwins.vim/master/README.md
 
 *  _**textwins.vim** A text space that encompasses terminal & editing windows_.  The navigational signage in _streamline.vim_ facilitates the \[N\], window #/id navigation in _textwins.vim._  To be released Feb 2018. 
 
