@@ -2,9 +2,9 @@ _Essential wares, to get there_ / Charles Sheridan
 
 # _streamline.vim_
 
-streamline.vim is a concise, minimal read of window data, and a set of maps to help you navigate.
+_streamline.vim_ is a concise, minimal read of window data, and a set of maps to help you navigate.
 
-streamline.vim is **designed for multi-window tabs** when editing routinely traverses more than three windows.  
+_streamline.vim_ is **designed for multi-window tabs** when editing routinely traverses more than three windows.  
 
 In this context, when, for example, Vim is in the lower left of a 9 window tab, and you want to go to a window in the middle far-right of the tab, _relative jkl; etc navigation may offer no direct route_, because the origin-destination windows are not adjacent.  
 
@@ -19,7 +19,7 @@ Alternative approaches are just _too much thinking, or are cumbersome, if one el
 
 In these scenarios, the developer regularly scans entire tabs, looking for identifying data -- **signs**, mainly window number, that enable navigation to the next window.  Every window has its own key data, best displayed on its own status line, and the feasible maximum information per window-statusline is reduced compared to a statusline that spans the horizontal of a tab. _Concision gains importance._
 
-Independent of these use cases, streamline.vim is designed for the developer who simply wants a _succinct and visually-quiet statusline of quickly-ascertainable window-state_.
+Independent of these use cases, _streamline.vim_ is designed for the developer who simply wants a _succinct and visually-quiet statusline of quickly-ascertainable window-state_.
 
 ##### TERMINAL MODES TN & TJ
 _streamline.vim_ brings Vim terminals into the familiar Vim representation of modal state -- **N & I**, Normal and Insert modes.
@@ -57,9 +57,9 @@ ___
 |g:streamline_timestamp_is_wanted_default|'Y' | 'Y' for timestamp display  |
 |g:streamline_timestamp_is_wanted|  per associaed _default var |||
 
-Statusline components external to _streamline.vim_  are called from function *Statusline_end_editwin()*.  Update this (or other plugin functions) to add more statusline components.
+Statusline components external to _streamline.vim_  are called from function **Statusline_end_editwin()**.  Update this (or other plugin functions) to add more statusline components.
 
-The 2 external statuslines available with _streamline.vim_ require Vim plugins _taglist_ and _fugitive_, respectively.
+The 2 external statuslines available with _streamline.vim_ **require Vim plugins _taglist_ and _fugitive_**, respectively.
 
 
 ## SCREENSHOTS
