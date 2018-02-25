@@ -61,7 +61,7 @@ ___
 |g:streamline_external_components_are_wanted_default |'N' | If 'Y', statusline includes Tlist_Get_Tagname_By_Line() & fugitive#statusline() |
 |g:streamline_external_components_are_wanted| per associated _default var ||
 |g:streamline_timestamp_is_wanted_default|'Y' | 'Y' for timestamp display  |
-|g:streamline_timestamp_is_wanted|  per associaed _default var |||
+|g:streamline_timestamp_is_wanted|  per associated _default var |||
 
 Statusline components external to _streamline.vim_  are called from function **Statusline_end_editwin()**.  Update this (or other plugin functions) to add more statusline components.
 
