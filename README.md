@@ -6,7 +6,7 @@ _streamline.vim_ is a concise, minimal read of window data, and a set of maps to
 
 _streamline.vim_ is **designed for multi-window tabs** when editing routinely traverses more than three windows.  
 
-In this context, when, for example, Vim is in the lower left of a 9 window tab, and you want to go to a window in the middle far-right of the tab, _relative jkl; etc navigation may offer no direct route_, because the origin-destination windows are not adjacent.  
+When, for example, Vim is in the lower left of a 9 window tab, and you want to go to a window in the middle far-right of the tab, _relative jkl; etc navigation may offer no direct route_, because the origin-destination windows are not adjacent.  
 
 Here, the fastest route is to navigate by the window number of the destination, its address.  
 
@@ -17,7 +17,7 @@ Alternative approaches are just _too much thinking, or are cumbersome, if one el
 * **Multiple-terminal sessons** where the developer both edits and interacts with static or varying sets of network terminals
 * **File system scans** for quick assessment of what is and is not present in the core directories of an OS instance
 
-In these scenarios, the developer regularly scans entire tabs, looking for identifying data -- **signs**, mainly window number, that enable navigation to the next window.  Every window has its own key data, best displayed on its own status line, and the feasible maximum information per window-statusline is reduced compared to a statusline that spans the horizontal of a tab. _Concision gains importance._
+In these scenarios, the developer regularly scans entire tabs, looking for identifying data -- **signs**, mainly window number, that enable navigation to a window of interest.  Every window has its own key data, best displayed on its own status line, and the feasible maximum information per window-statusline is reduced compared to a statusline that spans the horizontal of a tab. _Concision gains importance._
 
 Independent of these use cases, _streamline.vim_ is designed for the developer who simply wants a _succinct and visually-quiet statusline of quickly-ascertainable window-state_.
 
@@ -25,24 +25,28 @@ Independent of these use cases, _streamline.vim_ is designed for the developer w
 _streamline.vim_ brings Vim terminals into the familiar Vim representation of modal state -- **N & I**, Normal and Insert modes.
 
 _This means:_
- 
-* term_getstatus() "running,normal" => "**TN**" i.e. TERMINAL-Normal mode
-* term_getstatus() "running"        => "**TJ**" i.e. TERMINAL-Job mode
+
+| term_getstatus()  | Mode | statusline.vim|
+| :--- | :--- | :---: | 
+|running,normal | TERMINAL-Normal |**TN**|
+|running | TERMINAL-Job |**TJ**|
 
 ##### MOTION MAPS
-
 Navigation relies on both signs and maps.  So _streamline.vim_ also provides maps.
 
-| nmap |  Description | 
+| Default nmap Name |  Description | 
 | :--- | :--- | 
 |< Leader >< Leader >1 |Go to the specified window number|
 |< Leader >< Leader >2 |[same]|
 |< Leader >< Leader >3 |[same]|
 |< Leader >< Leader >4  | [same] |
 |...|...|
-|< Leader >< Leader >20|[same]|
+|< Leader >< Leader >100|[same]|
 
-< Leader >< Leader ># form is used rather than `gwN` on the premiss that it's ergonomically faster.  The developer may of course disagree, and redraw the maps.
+< Leader >< Leader ># is **default** form rather than `gwN` on the premiss that it's ergonomically faster.  The developer may of course disagree, and redraw the maps.  The 3-char default is used to avoid trampling over existing maps -- the plugin author suggests **,N** when that is not an issue.
+
+See 'GLOBAL VARS' re map configs.
+
 ##### More ?
 As described in the Global Vars section, if your definition of minimal can sustain just a little bit more, you can configure _streamline.vim_ to add git branch and Tlist information, as well as anything else that remains within your own sense of maximal minimal.
 ___
@@ -52,6 +56,8 @@ ___
 
 | Global | Default |  Description | 
 | :--- |  :--- | :--- | 
+|g:streamline_highest_window_map_number| 100| Navigation map w/ highest window number  |
+|g:streamline_map_name_prefix|< Leader>< Leader> | per var name  |
 |g:streamline_external_components_are_wanted_default |'N' | If 'Y', statusline includes Tlist_Get_Tagname_By_Line() & fugitive#statusline() |
 |g:streamline_external_components_are_wanted| per associated _default var ||
 |g:streamline_timestamp_is_wanted_default|'Y' | 'Y' for timestamp display  |
@@ -79,7 +85,7 @@ TimeStamps are omitted from terminal windows.
 ___
 
 ## RELATED PLUGINS
-*  _**tabwins.vim** 1 Command for custom window structures that persist._  This plugin produces the kinds of multi-window structures for which _streamline.vim_ is optimal.
+*  _**tabwins.vim** 1 Command for custom window structures that persist._  Produces the kinds of multi-window structures for which _streamline.vim_ is optimal.
   https://raw.githubusercontent.com/cesheridan/tabwins.vim/master/README.md
 
 *  _**textwins.vim** Windows that text_.  The navigational signage in _streamline.vim_ facilitates the \[N\], window #/id navigation in _textwins.vim._ 
@@ -89,7 +95,7 @@ ___
 * https://vim.sourceforge.io/scripts/script.php?script_id=5660
 
 ## DOCUMENTATION
-Documentation is at the below URL, and is not packaged with plugin code.
+At the below URL, and not packaged with plugin code.
 * https://raw.githubusercontent.com/cesheridan/streamline.vim/master/README.md
 
 Also see frequent in-line comments re design rationale.
