@@ -12,12 +12,12 @@ Here, the fastest route is to navigate by the window number of the destination, 
 
 Alternative approaches are just _too much thinking, or are cumbersome, if one elects to chase a mouse_.
 
-**Scenarios** include 
+**Use Cases** include 
 * **Research into established libraries**, viewed from galleries of meaningfully-arranged, many-windowed tabs
 * **Multiple-terminal sessons** where the developer both edits and interacts with static or varying sets of network terminals
 * **File system scans** for quick assessment of what is and is not present in the core directories of an OS instance
 
-In these scenarios, the developer regularly scans entire tabs, looking for identifying data -- **signs**, mainly window number, that enable navigation to a window of interest.  Every window has its own key data, best displayed on its own status line, and the feasible maximum information per window-statusline is reduced compared to a statusline that spans the horizontal of a tab. _Concision gains importance._
+The developer repeatedly scans entire tabs, looking for identifying data -- **signs**, mainly window number, that enable navigation to a window of interest.  Every window has its own key data, best displayed on its own status line, and the feasible maximum information per window-statusline is reduced compared to a statusline that spans the horizontal of a tab. _Concision gains importance._
 
 Independent of these use cases, _streamline.vim_ is designed for the developer who simply wants a _succinct and visually-quiet statusline of quickly-ascertainable window-state_.
 
