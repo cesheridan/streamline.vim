@@ -13,7 +13,7 @@ Here, the fastest route is to navigate by the window number of the destination, 
 Alternative approaches are just _too much thinking, or are cumbersome, if one elects to chase a mouse_.
 
 **Use Cases** include 
-* **Research into established libraries**, viewed from galleries of meaningfully-arranged, many-windowed tabs
+* **Research into established libraries**, viewed from galleries of carefully-arranged, many-windowed tabs
 * **Multiple-terminal sessons** where the developer both edits and interacts with static or varying sets of network terminals
 * **File system scans** for quick assessment of what is and is not present in the core directories of an OS instance
 
@@ -43,12 +43,12 @@ Navigation relies on both signs and maps.  So _streamline.vim_ also provides map
 |...|...|
 |< Leader >< Leader >100|[same]|
 
-< Leader >< Leader ># is **default** form rather than `gwN` on the premiss that it's ergonomically faster.  The developer may of course disagree, and redraw the maps.  The 3-char default is used to avoid trampling over existing maps -- the plugin author suggests **,N** when that is not an issue.
+< Leader >< Leader ># is **default** form rather than `gwN` on the premiss that it's ergonomically faster.  The developer may of course disagree, and redraw the maps.  The default uses 3 chars to (likely) avoid trampling over existing maps -- **,N** is suggested for when that is not an issue.
 
 See 'GLOBAL VARS' re map configs.
 
 ##### More ?
-As described in the Global Vars section, if your definition of minimal can sustain just a little bit more, you can configure _streamline.vim_ to add git branch and Tlist information, as well as anything else that remains within your own sense of maximal minimal.
+As described in 'GLOBAL VARS,' if your definition of minimal can sustain just a little bit more, you can configure _streamline.vim_ to add git branch and Tlist information, as well as anything else that remains within your own sense of maximal minimal.
 ___
 
 ## CONFIGURATION
