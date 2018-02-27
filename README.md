@@ -63,7 +63,7 @@ ___
 |g:streamline_timestamp_is_wanted_default|'Y' | 'Y' for timestamp display  |
 |g:streamline_timestamp_is_wanted|  per associated _default var |||
 
-Statusline components external to _streamline.vim_  are called from function **Statusline_end_editwin()**.  Update this (or other plugin functions) to add more statusline components.
+Statusline components external to _streamline.vim_  are called from function **streamline#end_editwin()**.  Update this (or other plugin functions) to add more statusline components.
 
 The 2 external statuslines available with _streamline.vim_ **require Vim plugins _taglist_ and _fugitive_**, respectively.
 
