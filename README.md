@@ -43,7 +43,7 @@ Navigation relies on both signs and maps.  So _streamline.vim_ also provides map
 |...|...|
 |< Leader >< Leader >100|[same]|
 
-< Leader >< Leader ># is **default** form rather than `gwN` on the premiss that it's ergonomically faster.  The developer may of course disagree, and redraw the maps.  The default uses 3 chars to (likely) avoid trampling over existing maps -- **,N** is suggested for when that is not an issue.
+< Leader >< Leader ># is **default** form rather than `gw#` on the premiss that it's ergonomically faster.  The developer may of course disagree, and redraw the maps.  The default uses 3 chars to (likely) avoid trampling over existing maps -- **,#** is suggested for when that is not an issue.
 
 See 'GLOBAL VARS' re map configs.
 
