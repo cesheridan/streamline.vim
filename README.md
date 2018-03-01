@@ -70,17 +70,17 @@ The 2 external statuslines available with _streamline.vim_ **require Vim plugins
 
 ## SCREENSHOTS
 
-[n]: ./doc/images/streamline.n.jpg?raw=true  "n"
+[n]: ./doc_graphics/images/streamline.n.jpg?raw=true  "n"
 ![alt text][n]
 
-[tn]: ./doc/images/streamline.tn.jpg?raw=true  "tn"
+[tn]: ./doc_graphics/images/streamline.tn.jpg?raw=true  "tn"
 ![alt text][tn]
 
 _**Statusline left to right:**_ Window#-Buffer# Mode Line#/Total_Lines #Columns WindowID FileName TimeStamp
 
 TimeStamps are omitted from terminal windows.
 
-[8windows]: ./doc/images/streamline.8windows.jpg?raw=true  "8windows"
+[8windows]: ./doc_graphics/images/streamline.8windows.jpg?raw=true  "8windows"
 ![alt text][8windows]
 ___
 
