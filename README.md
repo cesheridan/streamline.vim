@@ -42,6 +42,9 @@ Navigation relies on both signs and maps.  So _streamline.vim_ also provides map
 |< Leader >< Leader >4  | [same] |
 |...|...|
 |< Leader >< Leader >100|[same]|
+|< Leader >< Leader >h|Go to Highest window number|
+
+Scope is the current tab.
 
 < Leader >< Leader ># is **default** form rather than `gw#` on the premiss that it's ergonomically faster.  The developer may of course disagree, and redraw the maps.  The default uses 3 chars to (likely) avoid trampling over existing maps -- **,#** is suggested for when that is not an issue.
 
@@ -93,15 +96,15 @@ ___
 
 ## DISTRIBUTION
 * https://vim.sourceforge.io/scripts/script.php?script_id=5660
+* Includes release history 
 
 ## DOCUMENTATION
-At the below URL, and not packaged with plugin code.
 * https://raw.githubusercontent.com/cesheridan/streamline.vim/master/README.md
 
 Also see frequent in-line comments re design rationale.
 
 ## DEPLOYMENT
-* This plugin, in its default configuration, has no dependencies on other plugins and should load for any established Vim package manager, provided the package manager does not require special hooks in plugin code.  
+The .tgz decompresses to ./plugin & ./doc dirs compatatible with established Vim package managers. 
 
 ## LICENSE 
 License: GPL (Gnu Public License) version 3
