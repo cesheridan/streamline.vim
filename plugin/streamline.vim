@@ -1,7 +1,7 @@
 " ==============================================================================
 " streamline.vim
 " ==============================================================================
-" Version:       1.2.0
+" Version:       1.3.0
 " Author:        Charles E. Sheridan
 " Script:        https://vim.sourceforge.io/scripts/script.php?script_id=5660
 " Documention:   https://raw.githubusercontent.com/cesheridan/streamline.vim/master/README.md
@@ -50,6 +50,11 @@ if !exists("g:streamline_map_name_prefix")
   let       g:streamline_map_name_prefix = '<Leader><Leader>'
 endif
 " ==============================================================================
+function! streamline#goto_highest_window_number()
+" ==============================================================================
+  execute winnr("$").'wincmd w'
+endfunction
+" ==============================================================================
 function! streamline#build_navigation_maps(rcvd_hash) 
 " ==============================================================================
   let                           l:rcvd_hash = extend ({
@@ -67,11 +72,17 @@ function! streamline#build_navigation_maps(rcvd_hash)
     "e.g. ':5wincmd w'
 
     " ------------------------------------------------------------------
-    let     l:execute_arg = 'noremap <silent> '.l:map_name.' ' .l:cmd_rhs.'<CR>'
+    let     l:execute_arg = 'noremap <silent> '.l:map_name.' '.l:cmd_rhs.'<CR>'
     execute l:execute_arg
     " ------------------------------------------------------------------
     "  e.g.  noremap <silent>  <Leader><Leader>5  :5wincmd<CR>
   endfor
+
+  " map to streamline#goto_highest_window_number()
+  let     l:execute_arg 
+\ = 'noremap <silent> ' . l:rcvd_hash['map_name_prefix'] . 'h :call streamline#goto_highest_window_number()<CR>'
+
+  execute l:execute_arg 
 endfunction
 " ------------------------------------------------------------------------------
 command! BuildNavigationMaps
