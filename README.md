@@ -104,7 +104,7 @@ ___
 Also see frequent in-line comments re design rationale.
 
 ## DEPLOYMENT
-The .tgz decompresses to ./plugin & ./doc dirs compatatible with established Vim package managers. 
+The .tgz decompresses to ./plugin & ./doc dirs compatible with established Vim package managers. 
 
 ## LICENSE 
 License: GPL (Gnu Public License) version 3
