@@ -1,0 +1,5 @@
+'edit '.*streamline.txt* Essential wares, to get there
+
+Documentation: *https://raw.githubusercontent.com/cesheridan/streamline.vim/master/README.md*
+       Author: Charles Sheridan
+      Contact: opensource at att.net
