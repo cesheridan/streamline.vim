@@ -6,7 +6,7 @@ _streamline.vim_ is a concise, minimal read of window data, and a set of maps to
 
 _streamline.vim_ is **designed for multi-window tabs** when editing routinely traverses more than three windows.  
 
-When, for example, Vim is in the lower left of a 9 window tab, and you want to go to a window in the middle far-right of the tab, _relative jkl; etc navigation may offer no direct route_, because the origin-destination windows are not adjacent.  
+When, for example, Vim is in the lower left of a 9 window tab, and you want to go to a window in the middle far-right of the tab, _relative hjkl etc navigation may offer no direct route_, because the origin-destination windows are not adjacent.  
 
 Here, the fastest route is to navigate by the window number of the destination, its address.  
 
@@ -87,25 +87,25 @@ TimeStamps are omitted from terminal windows.
 ![alt text][8windows]
 ___
 
-## RELATED PLUGINS
+#### RELATED PLUGINS
 *  _**tabwins.vim** 1 Command for custom window structures that persist._  Produces the kinds of multi-window structures for which _streamline.vim_ is optimal.
   https://raw.githubusercontent.com/cesheridan/tabwins.vim/master/README.md
 
 *  _**textwins.vim** Windows that text_.  The navigational signage in _streamline.vim_ facilitates the \[N\], window #/id navigation in _textwins.vim._ 
   https://raw.githubusercontent.com/cesheridan/textwins.vim/master/README.md
 
-## DISTRIBUTION
+#### DISTRIBUTION
 * https://vim.sourceforge.io/scripts/script.php?script_id=5660
 * Includes release history 
 
-## DOCUMENTATION
+#### DOCUMENTATION
 * https://raw.githubusercontent.com/cesheridan/streamline.vim/master/README.md
 
 Also see frequent in-line comments re design rationale.
 
-## DEPLOYMENT
+#### DEPLOYMENT
 The .tgz decompresses to ./plugin & ./doc dirs compatible with established Vim package managers. 
 
-## LICENSE 
+#### LICENSE 
 License: GPL (Gnu Public License) version 3
 Copyright (c) 2018 Charles E. Sheridan
