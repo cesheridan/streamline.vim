@@ -106,6 +106,9 @@ Also see frequent in-line comments re design rationale.
 #### DEPLOYMENT
 The .tgz decompresses to ./plugin & ./doc dirs compatible with established Vim package managers. 
 
+#### LIKE ?
+* If you like _streamline.vim_, please vote for it at vim.org.
+
 #### LICENSE 
 License: GPL (Gnu Public License) version 3
 Copyright (c) 2018 Charles E. Sheridan
