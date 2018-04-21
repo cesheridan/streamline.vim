@@ -26,7 +26,7 @@ _streamline.vim_ brings Vim terminals into the familiar Vim representation of mo
 
 _This means:_
 
-| term_getstatus()  | Mode | statusline.vim|
+| term_getstatus()  | Mode | streamline.vim|
 | :--- | :--- | :---: | 
 |running,normal | TERMINAL-Normal |**TN**|
 |running | TERMINAL-Job |**TJ**|
